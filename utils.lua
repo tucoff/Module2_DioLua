@@ -1,27 +1,27 @@
 local utils = {}
 
-function utils.showAttributes(player) 
+function utils.showAttributes(entity) 
     local vida = ""
     local ataque = ""
     local defesa = ""
-    for i = 1, player.maxHealth, 1 do
-        if player.health >= i then
+    for i = 1, entity.maxHealth, 1 do
+        if entity.health >= i then
             vida = vida .. "🧡"
         else
             vida = vida .. "💔"
         end 
     end
     print("VIDA:   " .. vida)
-    for i = 1, 25, 1 do
-        if player.attack >= i then
+    for i = 1, 20, 1 do
+        if entity.attack >= i then
             ataque = ataque .. "🟨"
         else
             ataque = ataque .. "⬛"
         end 
     end
     print("ATAQUE: " .. ataque)
-    for i = 1, 25, 1 do
-        if player.defense >= i then
+    for i = 1, 20, 1 do
+        if entity.defense >= i then
             defesa = defesa .. "🟨"
         else
             defesa = defesa .. "⬛"

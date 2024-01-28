@@ -6,5 +6,6 @@ player.health = 10
 player.attack = 0
 player.defense = 0
 player.attributePoints = 20
+player.potions = 3
 
 return player
